@@ -186,7 +186,6 @@ body {
 }
 
 /* About Section */
-
 #about {
     padding: 5% 7.5%;
 }
@@ -227,10 +226,13 @@ body {
 }
 
 /* Team Section */
-
 #team-section {
     text-align: center;
     padding: 5% 0;
+}
+
+#team-section h1 {
+    font-size: 40px;
 }
 
 #app {
@@ -453,8 +455,39 @@ input[type="radio"] {
     transition: all 0.15s;
 }
 
-/* Footer Section */
+/* Gallery Section */
+#gallery-section {
+    padding: 5% 7.5%;
+}
 
+.gallery-container {
+    margin: auto;
+    width: 70%;
+    text-align: center;
+}
+
+.gallery-container h1 {
+    font-size: 40px;
+    margin: 0 0 40px;
+}
+
+#carousel-img {
+    width: 100%;
+}
+
+a.btn {
+    margin: 55px 0 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+a.btn:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+/* Footer Section */
 #footer {
     padding: 120px 7.5% 50px;
 }
@@ -522,7 +555,8 @@ input[type="radio"] {
     }
 
     #hero,
-    #about {
+    #about,
+    #gallery-section {
         padding: 50px 3%;
         text-align: center;
     }
@@ -620,13 +654,42 @@ input[type="radio"] {
     }
 
     .cards-container {
-      gap: 30px;
-      margin: 45px auto 0;
-  }
-  
-  .member-cards {
-      gap: 30px;
-  }
+        gap: 30px;
+        margin: 45px auto 0;
+    }
+
+    #team-section h1 {
+        font-size: 30px;
+    }
+
+    #app {
+        font-size: 16px;
+    }
+
+    .member-cards {
+        gap: 30px;
+    }
+
+    a.btn {
+        font-size: 16px;
+        margin-top: 35px;
+    }
+
+    #gallery-section {
+        padding: 10% 20px;
+    }
+
+    .gallery-container {
+        width: 100%;
+    }
+
+    .gallery-container h1 {
+        font-size: 30px;
+    }
+
+    #carousel-img {
+        width: 100%;
+    }
 
     .social-icons {
         flex-direction: column;
