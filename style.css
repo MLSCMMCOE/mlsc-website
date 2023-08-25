@@ -233,6 +233,7 @@ body {
 
 #team-section h1 {
     font-size: 40px;
+    margin: 0;
 }
 
 #app {
@@ -685,10 +686,6 @@ a.btn:hover {
 
     .gallery-container h1 {
         font-size: 30px;
-    }
-
-    #carousel-img {
-        width: 100%;
     }
 
     .social-icons {

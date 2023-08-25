@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            color: blueviolet;
+        }
+
+        .grid-container {
+            columns: 4 300px;
+            row-gap: 30px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .grid-container>div {
+            width: 100%;
+            margin: 5px;
+            border-radius: 5px;
+            transition: all .25s ease-in-out;
+        }
+
+        .grid-container>div:hover img {
+            filter: grayscale(0);
+        }
+
+        img {
+            width: 100%;
+            filter: grayscale(100%);
+            border-radius: 7px;
+            transition: all .25s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>MLSC Photo Gallery</h1>
+    <div class="grid-container">
+        <div>
+            <img class='grid-item grid-item-1'
+                src="https://source.unsplash.com/300x600/?team"
+                alt=''>
+        </div>
+        <div>
+            <img class='grid-item grid-item-2'
+                src="https://source.unsplash.com/400x200/?team"
+                alt=''>
+        </div>
+        <div>
+            <img class='grid-item grid-item-3'
+                src="https://source.unsplash.com/300x600/?team"
+                alt=''>
+        </div>
+        <div>
+            <img class='grid-item grid-item-4'
+                src="https://source.unsplash.com/900x600/?team"
+                alt=''>
+        </div>
+        <div>
+            <img class='grid-item grid-item-5'
+                src="https://source.unsplash.com/600x600/?team"
+                alt=''>
+        </div>
+        <div>
+            <img class='grid-item grid-item-6'
+                src="https://source.unsplash.com/1000x600/?team"
+                alt=''>
+        </div>
+        <div>
+            <img class='grid-item grid-item-7'
+                src="https://source.unsplash.com/600x1000/?team"
+                alt=''>
+        </div>
+        <div>
+            <img class='grid-item grid-item-8'
+                src="https://source.unsplash.com/400x600/?team"
+                alt=''>
+        </div>
+        <div>
+            <img class='grid-item grid-item-9'
+                src="https://source.unsplash.com/400x600/?team"
+                alt=''>
+        </div>
+        <div>
+            <img class='grid-item grid-item-10'
+                src="https://source.unsplash.com/400x600/?team"
+                alt=''>
+        </div>
+    </div>
+
+</body>
+
+</html>
