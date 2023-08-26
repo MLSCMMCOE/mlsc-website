@@ -420,13 +420,13 @@ input[type="radio"] {
 .card-title span {
     font-weight: 400;
     font-size: 15px;
-    color:var(--color-black);
+    color: var(--color-black);
 }
 
 .card-socials {
-    display: flex;
+    /* display: flex;
     height: 0;
-    opacity: 0;
+    opacity: 0; */
     margin-top: 20px;
     gap: 20px;
     transition: 0.5s;
@@ -446,11 +446,11 @@ input[type="radio"] {
     fill: var(--color-primary-blue);
 }
 
+/* 
 .card:hover>.card-socials {
     opacity: 1;
     height: 35px;
-}
-
+} */
 .card-socials-btn:hover {
     transform: translateY(-5px);
     transition: all 0.15s;
@@ -476,7 +476,7 @@ input[type="radio"] {
     width: 100%;
 }
 
-.carousel-inner{
+.carousel-inner {
     border-radius: 20px;
 }
 
@@ -561,7 +561,7 @@ a.btn:hover {
     #hero,
     #about,
     #gallery-section {
-        padding: 50px 3%;
+        padding: 50px 0%;
         text-align: center;
     }
 

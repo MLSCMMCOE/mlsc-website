@@ -1,15 +1,17 @@
-.heading{
+
+
+.heading {
     text-align: center;
     padding-top: 50px;
     width: 80%;
-    margin:  0 auto;
+    margin: 0 auto;
 }
 
-.heading h1{
+.heading h1 {
     font-size: 48px;
 }
 
-.heading p{
+.heading p {
     font-size: 25px;
     padding: 10px;
 }
@@ -40,15 +42,15 @@ img {
 }
 
 @media (max-width: 768px) {
-    .heading h1{
+    .heading h1 {
         font-size: 30px;
     }
-    
-    .heading p{
+
+    .heading p {
         font-size: 18px;
     }
 
-    .grid-container{
+    .grid-container {
         margin: 30px auto;
     }
 }
