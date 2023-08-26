@@ -11,6 +11,61 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> <!-- User Stylesheet -->
     <link rel="stylesheet" href="style.css"> <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo_main.png" type="image/x-icon">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<style>
+    .swiper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      .swiper {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+    .swiper-pagination{
+    position: relative;
+    margin-top: 50px;
+    }
+      .event-swiper{
+        width: 80%;
+      }
+      .event-description{
+        width: 80%;
+      }
+      @media (max-width: 991px){
+            .event-swiper {
+                width: 100%;
+            }
+            .event-description{
+                width: 100%;
+            }
+        }
+
+</style>
+
 </head>
 
 <body class="bg-color-white">
@@ -465,6 +520,54 @@
             </section>
         </div>
     </section>
+
+
+    
+    <section id="Events-section" style="display: flex; flex-direction:column; align-items:center;">
+        <div class="swiper event-swiper">
+            <h1 class="header-font-700" style="margin-bottom: 3rem;">Our Events</h1>
+            <div class="swiper-wrapper" style="width: 100%;">
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="event-description" style="display: flex; flex-direction:column; align-items:center; margin-top:40px;">
+            <h1 id="event-title" class="header-font-700">Azure and github backpack</h1>
+            <p id="event-desc" style="text-align: center; padding:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div> 
+
+
+    </section>
+
     <section id="gallery-section">
         <div class="gallery-container">
             <h1 class="header-font-700">Gallery</h1>
@@ -510,36 +613,7 @@
             <p class="copyright">&copy; 2023 MLSC MMCOE</p>
         </div>
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const dropdownButton = document.querySelector(".dropdown-toggle");
-            const dropdownItems = document.querySelectorAll(".dropdown-item");
-        
-            dropdownItems.forEach(item => {
-                item.addEventListener("click", function () {
-                    const selectedValue = item.getAttribute("data-value");
-                    dropdownButton.textContent = selectedValue;
-                });
-            });
-        });
-        
-        var app = document.getElementById('app');
-        
-        var typewriter = new Typewriter(app, {
-            loop: true
-        });
-        
-        typewriter.typeString('"Alone we can do so little; together we can do so much." - Helen Keller')
-            .pauseFor(2000)
-            .deleteAll()
-            .typeString('"Individually, we are one drop. Together, we are an ocean." - Ryunosuke Satoro')
-            .pauseFor(2000)
-            .deleteAll()
-            .typeString('"Teamwork makes the dream work." - John C. Maxwell')
-            .pauseFor(2000)
-            .deleteAll()
-            .start();
-    </script>
 </body>
-
+<script src="index.js"></script>
+<script src="carousel.js"></script>
 </html>
