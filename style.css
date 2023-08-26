@@ -133,7 +133,7 @@ body {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 .nav-btn:hover {
@@ -396,7 +396,7 @@ input[type="radio"] {
     height: 325px;
     border: 2px solid var(--color-primary-blue);
     box-shadow: 4px 4px var(--color-primary-blue);
-    border-radius: 5px;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -420,7 +420,7 @@ input[type="radio"] {
 .card-title span {
     font-weight: 400;
     font-size: 15px;
-    color: var(--color-black);
+    color:var(--color-black);
 }
 
 .card-socials {
@@ -474,6 +474,10 @@ input[type="radio"] {
 
 #carousel-img {
     width: 100%;
+}
+
+.carousel-inner{
+    border-radius: 20px;
 }
 
 a.btn {
@@ -544,7 +548,7 @@ a.btn:hover {
     }
 
     .nav-link {
-        padding: 10px;
+        padding: 7px;
     }
 
     .nav-btn {
@@ -552,7 +556,6 @@ a.btn:hover {
         margin-left: -10px;
         margin: 10px 0;
         text-decoration: none;
-        border-radius: 50px;
     }
 
     #hero,
