@@ -81,6 +81,7 @@ textarea {
 
 .btn:hover {
     background-color: #000000;
+    color: #fafafa;
 }
 
 .field:focus {
