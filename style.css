@@ -512,15 +512,15 @@ input[type="radio"] {
   width: 50%;
 }
 
-#event-title{
-    font-size: 35px;
+#event-title {
+  font-size: 35px;
 }
 
-#event-desc{
-    text-align: justify;
-    font-size: 18px;
-    margin-top: 20px;
-    line-height: 1.6;
+#event-desc {
+  text-align: justify;
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 1.6;
 }
 
 /* Gallery Section */
@@ -559,6 +559,76 @@ a.btn:hover {
   color: var(--color-white);
 }
 
+/* Testimonials Section */
+
+#testimonials-section{
+    padding: 5% 0;
+}
+
+.heading {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.heading h1 {
+    font-size: 40px;
+}
+
+.heading p {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.testimonial-container{
+    width: 85%;
+    margin: 40px auto;
+    columns: 4 250px;
+    column-gap: 10px;
+}
+
+.testimonial-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid #2038603d;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.card-header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-header #avatar{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+.author{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.card-header p,h3{
+    margin: 0;
+}
+
+.card-header h3{
+    font-size: 20px;
+}
+
+.card-header p{
+    font-size: 12px;
+}
 /* Footer Section */
 #footer {
   padding: 120px 7.5% 50px;
@@ -664,8 +734,6 @@ a.btn:hover {
     text-align: justify;
   }
 
-  #
-
   .event-swiper {
     width: 100%;
   }
@@ -699,7 +767,8 @@ a.btn:hover {
     margin: 0;
   }
 
-  #team-section,#event-section {
+  #team-section,
+  #event-section, #testimonials-section {
     padding: 10% 0;
   }
 
@@ -760,17 +829,25 @@ a.btn:hover {
     margin-top: 35px;
   }
 
-  #gallery-section {
+  #gallery-section, #events-section, #testimonials-section {
     padding: 10% 20px;
   }
 
-  .gallery-container {
+  .gallery-container, .testimonial-container {
     width: 100%;
   }
 
   .gallery-container h1 {
     font-size: 30px;
   }
+
+  .heading h1 {
+    font-size: 30px;
+}
+
+.heading p {
+    font-size: 18px;
+}
 
   .social-icons {
     flex-direction: column;
