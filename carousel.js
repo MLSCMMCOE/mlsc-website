@@ -62,27 +62,19 @@ const events = [
 {
   title:"5",
   desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-},
-{
-  title:"6",
-  desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
-},
-{
-  title:"7",
-  desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis "
-},
-{
-  title:"8",
-  desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud "
-},
-{
-  title:"9",
-  desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod"
 }
 ]
 
 
-  swiper.on('slideChange', function () {
-    document.getElementById("event-title").innerHTML = events[swiper.realIndex].title;
-    document.getElementById("event-desc").innerHTML = events[swiper.realIndex].desc;  
-  });
+
+for(let i=1;i<=events.length;i++){
+  document.getElementById("swiper_images").innerHTML += `
+  <div class="swiper-slide"> <img src="/assets/event1/${i}.jpg"> </div>`
+}
+
+  
+
+swiper.on('slideChange', function () {
+  document.getElementById("event-title").innerHTML = events[swiper.realIndex].title;
+  document.getElementById("event-desc").innerHTML = events[swiper.realIndex].desc;  
+});
