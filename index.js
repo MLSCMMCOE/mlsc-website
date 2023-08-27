@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    for (i = 0; i < 5; i++) {
+    for (i = 1; i <= 5; i++) {
         document.getElementById("gallery_container").innerHTML += `
-        <div class="carousel-item active"> <img src="assets/gallery_preview/${getRandomInt(5)}.jpg" class="d-block" alt="image" id="carousel-img"> 
+        <div class="carousel-item active"> <img src="assets/gallery_preview/${i}.jpg" class="d-block" alt="image" id="carousel-img"> 
         </div>
         `
     }
