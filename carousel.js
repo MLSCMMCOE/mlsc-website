@@ -9,6 +9,23 @@ var swiper = new Swiper(".event-swiper", {
         disableOnInteraction: false,
       },
       speed: 800,
+    breakpoints:{
+        320:{
+            slidesPerView: 1,
+        },
+        480:{
+            slidesPerView: 1,
+        },
+        640:{
+            slidesPerView: 1,
+        },
+        768:{
+            slidesPerView: 2,
+        },
+        1024:{
+            slidesPerView: 3,
+        },
+    },
     coverflowEffect: {
       rotate: 50,
       stretch: 0,
