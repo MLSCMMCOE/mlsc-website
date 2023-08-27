@@ -11,11 +11,13 @@
     <link rel="shortcut icon" href="../assets/logo_main.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="contact-style.css">
     <link rel="stylesheet" href="../style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PM4LF4V9ZL"></script>
+    <script src="Snackbar.js"></script>
+    <link rel="stylesheet" href="snackbar.css">
 </head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PM4LF4V9ZL"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
@@ -38,7 +40,15 @@
         <div class="contact-box bg-color-white">
             <div class="left"> <img src="../assets/Contact us-bro.svg" alt="" id="contact-img"> </div>
             <div class="right">
-                <h2 class="header-font-700">Contact Us</h2> <input type="text" class="field" placeholder="Your Name" required> <input type="email" class="field" placeholder="Your Email" required> <input type="text" class="field" placeholder="Subject" required> <textarea placeholder="Message" class="field"></textarea> <button class="btn">Send</button>
+                <h2 class="header-font-700">Contact Us</h2>
+                <form id="contact_form">
+                <input type="text" class="field" name="name" placeholder="Your Name" required>
+                 <input type="email" class="field" name="email" placeholder="Your Email" required>
+                  <input type="text" class="field" name="subject" placeholder="Subject" required>
+                  <textarea placeholder="Message" name="message"g class="field"></textarea> 
+                   <button type="submit" class="btn">Send</button>
+                </form>
+
             </div>
         </div>
     </div>
@@ -69,9 +79,10 @@
                     </svg>
                     <p>YouTube</p>
                 </a> </div>
-            <p class="copyright">&copy; 2023 MLSC MMCOE</p>
+                <p class="copyright">&copy; 2023 MLSC MMCOE</p>
         </div>
     </footer>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="contact.js"></script>
 </html>
