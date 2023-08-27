@@ -69,7 +69,7 @@ const events = [
 
 for(let i=1;i<=events.length;i++){
   document.getElementById("swiper_images").innerHTML += `
-  <div class="swiper-slide"> <img src="./assets/event1/${i}.jpg"> </div>`
+  <div class="swiper-slide"> <img src="assets/event1/${i}.jpg"> </div>`
 }
 
   
