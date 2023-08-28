@@ -11,19 +11,24 @@ var swiper = new Swiper(".event-swiper", {
       speed: 800,
     breakpoints:{
         320:{
+            effect: "slide",
             slidesPerView: 1,
         },
         480:{
+          effect: "slide",
             slidesPerView: 1,
         },
         640:{
+          effect: "slide",
             slidesPerView: 1,
         },
         768:{
-            slidesPerView: 2,
+          effect: "slide",
+            slidesPerView: 1,
         },
         1024:{
             slidesPerView: 3,
+            effect: "coverflow",
         },
     },
     coverflowEffect: {
@@ -45,23 +50,23 @@ var swiper = new Swiper(".event-swiper", {
 const events = [
     {
         title:"Azure and github backpack",
-        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        desc:"This was our first event of the year 2023. We had more than 80 participants. The event was conducted in offline mode. The participants were given a hands on experience on azure and github. We had our president, Sahil Sarkate, who explained the concepts of Azure in a very simple manner. The event was a great success and we had a lot of positive feedback from the participants."
     },
     {
-      title:"2",
-      desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut "
+      title:"Azure",
+      desc:"The session touched upon an in-depth overview of Microsoft Azure, a leading cloud computing platform. Participants learnt about the wide range of services offered by Azure, including virtual machines, databases, networking, and storage."
   },
   {
-    title:"3",
-    desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore "
+    title:"Azure",
+    desc:" To enable hands-on experience, a step-by-step guide was provided to help participants create their own student Azure accounts with the help of the MLSC team. This allowed the participants to access premium Azure services and explore the platform's capabilities in a risk-free environment."
 },
 {
-  title:"4",
-  desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore "
+  title:"Github",
+  desc:"The session then dived into GitHub, a popular web-based platform for hosting and collaborating on Git repositories. Participants were given an overview of GitHub's interface and features, including creating repositories, managing issues, and collaborating through pull requests."
 },
 {
-  title:"5",
-  desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  title:"Github",
+  desc:"They learnt about featurse of Github such as codespaces, github pages, actions and workflows and how GitHub promotes collaboration among team members and fosters an open-source development community."
 }
 ]
 
@@ -77,4 +82,13 @@ for(let i=1;i<=events.length;i++){
 swiper.on('slideChange', function () {
   document.getElementById("event-title").innerHTML = events[swiper.realIndex].title;
   document.getElementById("event-desc").innerHTML = events[swiper.realIndex].desc;  
+  // if(swiper.realIndex == 4){
+  //   swiper.slideToLoop()
+  // }
 });
+
+
+window.addEventListener("resize", function(){
+  swiper.autoplay.start();
+  swiper.update();
+})
