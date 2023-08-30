@@ -66,10 +66,9 @@ const events = [
 },
 {
   title:"Github",
-  desc:"They learnt about featurse of Github such as codespaces, github pages, actions and workflows and how GitHub promotes collaboration among team members and fosters an open-source development community."
+  desc:"They learned about features of Github such as codespaces, github pages, actions and workflows and how GitHub promotes collaboration among team members and fosters an open-source development community."
 }
 ]
-
 
 
 for(let i=1;i<=events.length;i++){
@@ -78,13 +77,13 @@ for(let i=1;i<=events.length;i++){
 }
 
   
-
 swiper.on('slideChange', function () {
   document.getElementById("event-title").innerHTML = events[swiper.realIndex].title;
   document.getElementById("event-desc").innerHTML = events[swiper.realIndex].desc;  
-  // if(swiper.realIndex == 4){
-  //   swiper.slideToLoop()
-  // }
+  if(swiper.realIndex == 4){
+    swiper.slideToLoop()
+  }
+
 });
 
 
@@ -92,3 +91,7 @@ window.addEventListener("resize", function(){
   swiper.autoplay.start();
   swiper.update();
 })
+
+
+
+swiper.slides.concat("")
