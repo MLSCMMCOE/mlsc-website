@@ -3,6 +3,7 @@ var swiper = new Swiper(".event-swiper", {
     loop:true,
     grabCursor: true,
     centeredSlides: true,
+    init:false,
     slidesPerView: 3,
     autoplay: {
         delay: 3500,
@@ -59,8 +60,8 @@ const events = [
   {
     title:"Azure",
     desc:" To enable hands-on experience, a step-by-step guide was provided to help participants create their own student Azure accounts with the help of the MLSC team. This allowed the participants to access premium Azure services and explore the platform's capabilities in a risk-free environment."
-},
-{
+  },
+  {
   title:"Github",
   desc:"The session then dived into GitHub, a popular web-based platform for hosting and collaborating on Git repositories. Participants were given an overview of GitHub's interface and features, including creating repositories, managing issues, and collaborating through pull requests."
 },
@@ -71,27 +72,39 @@ const events = [
 ]
 
 
-for(let i=1;i<=events.length;i++){
+// populate swiper images
+for(let i=1;i<=events.length+1;i++){
   document.getElementById("swiper_images").innerHTML += `
   <div class="swiper-slide"> <img src="assets/event1/${i}.jpg"> </div>`
 }
 
-  
+swiper.on("init",()=>{
+  const bullets = document.getElementsByClassName("swiper-pagination-bullet")
+  // set last bullet to hidden
+  bullets[bullets.length-1].style.display = "none"
+})
+
+swiper.init()
+
+// set event title and desc on slide change
 swiper.on('slideChange', function () {
-  document.getElementById("event-title").innerHTML = events[swiper.realIndex].title;
-  document.getElementById("event-desc").innerHTML = events[swiper.realIndex].desc;  
-  if(swiper.realIndex == 4){
+
+  if(swiper.realIndex == 5){
     swiper.slideToLoop()
   }
-
+  try {
+    document.getElementById("event-title").innerHTML = events[swiper.realIndex].title;
+    document.getElementById("event-desc").innerHTML = events[swiper.realIndex].desc;  
+  } catch (error) {}
 });
 
 
 window.addEventListener("resize", function(){
-  swiper.autoplay.start();
-  swiper.update();
+  document.getElementById("swiper_images").innerHTML = ""
+  for(let i=1;i<=events.length+1;i++){
+    document.getElementById("swiper_images").innerHTML += `
+    <div class="swiper-slide"> <img src="assets/event1/${i}.jpg"> </div>`
+  }
+  swiper.slideToLoop()
+  swiper.init();
 })
-
-
-
-swiper.slides.concat("")
