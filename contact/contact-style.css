@@ -12,6 +12,28 @@
     margin: auto;
 }
 
+ #map{
+    padding-left: 50px;
+}
+/*
+#map iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+@media screen and (max-width: 1400px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    #map{
+        padding-top: 50px;
+        padding-left: 0;
+    }
+}
+
 .contact-box {
     max-width: 900px;
     display: flex;
