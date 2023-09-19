@@ -517,7 +517,7 @@ input[type="radio"] {
 }
 
 #event-desc {
-  text-align: justify;
+  text-align: center;
   font-size: 18px;
   margin-top: 20px;
   line-height: 1.6;
@@ -540,6 +540,8 @@ input[type="radio"] {
 }
 
 #carousel-img {
+  object-fit: cover;
+  height: 60vh;
   width: 100%;
 }
 
