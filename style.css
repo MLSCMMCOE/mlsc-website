@@ -959,3 +959,7 @@ hr{
     text-align: center;
   }
 }
+
+.swiper-pagination-bullet-active{
+  --swiper-theme-color: darkblue;
+}
