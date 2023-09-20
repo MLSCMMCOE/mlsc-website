@@ -1,4 +1,7 @@
-
+.alert {
+    border-radius: 0px;
+    margin: 0;
+}
 
 .heading {
     text-align: center;
