@@ -11,10 +11,6 @@
     width: 85%;
     margin: auto;
 }
-
- #map{
-    padding-left: 50px;
-}
 /*
 #map iframe{
     position: absolute;
@@ -27,10 +23,6 @@
 @media screen and (max-width: 1400px) {
     .contact-container {
         flex-direction: column;
-    }
-    #map{
-        padding-top: 50px;
-        padding-left: 0;
     }
 }
 
