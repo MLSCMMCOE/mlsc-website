@@ -10,12 +10,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    document.getElementById("gallery_container").innerHTML = `
+    <div class="carousel-item active"> <img src="assets/gallery_preview/1.jpg" class="d-block" alt="image" id="carousel-img"> </div>`
 
 
-    for (i = 1; i <= 5; i++) {
+    for (i = 2; i <= 5; i++) {
         document.getElementById("gallery_container").innerHTML += `
-        <div class="carousel-item active"> <img src="assets/gallery_preview/${i}.jpg" class="d-block" alt="image" id="carousel-img"> 
-        </div>
+        <div class="carousel-item"> <img src="assets/gallery_preview/${i}.jpg" class="d-block" alt="image" id="carousel-img"> </div>
         `
     }
     
@@ -38,9 +39,4 @@ typewriter.typeString('"Alone we can do so little; together we can do so much." 
     .pauseFor(2000)
     .deleteAll()
     .start();
-
-
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-}
 
