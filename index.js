@@ -29,14 +29,22 @@ var typewriter = new Typewriter(app, {
     loop: true
 });
 
-typewriter.typeString('"Alone we can do so little; together we can do so much." - Helen Keller')
-    .pauseFor(2000)
-    .deleteAll()
-    .typeString('"Individually, we are one drop. Together, we are an ocean." - Ryunosuke Satoro')
-    .pauseFor(2000)
-    .deleteAll()
-    .typeString('"Teamwork makes the dream work." - John C. Maxwell')
-    .pauseFor(2000)
-    .deleteAll()
-    .start();
 
+
+getQuotes = async () => {
+    const response = await fetch("https://api.quotable.io/quotes/random?limit=3&tags=technology|famous-quotes|creativity&maxLength=100")
+    const data = await response.json();
+    
+    let writer = typewriter
+
+    for(i=0; i<data.length; i++){
+        writer = writer.typeString(`"${data[i].content}" - ${data[i].author}`)
+        .pauseFor(2000)
+        .deleteAll()
+    }
+
+    writer.start()
+}
+
+
+getQuotes()
