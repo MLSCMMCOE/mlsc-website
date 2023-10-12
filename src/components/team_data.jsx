@@ -3,7 +3,7 @@ const team = {
       {
         name: "Sahil Sarkate",
         role: "β - MLSA",
-        img: "./assets/Team_Profiles/sahil_sarkate.png",
+        img: new URL("../assets/Team_Profiles/sahil_sarkate.png", import.meta.url).href,
         socials: {
           instagram: "https://www.instagram.com/_sxhillll_16/",
           github: "https://github.com/Sahil-Sarkate",
@@ -13,7 +13,7 @@ const team = {
       {
         name: "Yuvraj Singh",
         role: "AI-ML Head",
-        img: "./assets/Team_Profiles/yuvraj_singh.png",
+        img: new URL("../assets/Team_Profiles/yuvraj_singh.png", import.meta.url).href,
         socials: {
           linktree: "https://linktr.ee/sukhmani1303",
           github: "https://github.com/sukhmani1303",
@@ -23,7 +23,7 @@ const team = {
       {
         name: "Om Thakkar",
         role: "Development Head",
-        img: "./assets/Team_Profiles/Om_Thakkar.png",
+        img: new URL("../assets/Team_Profiles/Om_Thakkar.png", import.meta.url).href,
         socials: {
           instagram: "https://instagram.com/omthakkar343",
           github: "https://github.com/OmThakkar",
@@ -33,7 +33,7 @@ const team = {
       {
         name: "Ayush Deshpande",
         role: "Cloud Head",
-        img: "./assets/Team_Profiles/Ayush_Deshpande.png",
+        img: new URL("../assets/Team_Profiles/Ayush_Deshpande.png", import.meta.url).href,
         socials: {
           instagram: "https://instagram.com/ayush.arc",
           github: "https://github.com/asyndoggo",
@@ -43,7 +43,7 @@ const team = {
       {
         name: "Vedant Dumbhare",
         role: "Corporate Head",
-        img: "./assets/Team_Profiles/Vedant_Dumbhare.png",
+        img: new URL("../assets/Team_Profiles/Vedant_Dumbhare.png", import.meta.url).href,
         socials: {
           instagram: "https://www.instagram.com/_vspacebar20",
           github: "https://github.com/vpanada20",
@@ -53,7 +53,7 @@ const team = {
       {
         name: "Harshvardhan Grandhi",
         role: "Project Manager",
-        img: "./assets/Team_Profiles/HarshvardhanGrandhi.png",
+        img: new URL("../assets/Team_Profiles/HarshvardhanGrandhi.png", import.meta.url).href,
         "socials": {
           "instagram": "https://www.instagram.com/hvsgrandhi_0508/",
           "github": "https://github.com/hvsgrandhi",
@@ -63,7 +63,7 @@ const team = {
       {
         name: "Jaydatta Patwe",
         role: "Management Head",
-        img: "./assets/Team_Profiles/Jaydatta_Patwe.png",
+        img: new URL("../assets/Team_Profiles/Jaydatta_Patwe.png", import.meta.url).href,
         socials: {
           instagram: "https://instagram.com/_jaydatt._",
           github: "https://github.com/jaypatwe",
@@ -76,7 +76,7 @@ const team = {
       {
         name: "Yuvraj Singh",
         role: "AI-ML Head",
-        img: "./assets/Team_Profiles/yuvraj_singh.png",
+        img: new URL("../assets/Team_Profiles/yuvraj_singh.png", import.meta.url).href,
         socials: {
           linktree: "https://linktr.ee/sukhmani1303",
           github: "https://github.com/sukhmani1303",
@@ -86,7 +86,7 @@ const team = {
       {
         name: "Swanand Kulkarni",
         role: "Member",
-        img: "./assets/Team_Profiles/Swanand_Kulkarni.png",
+        img: new URL("../assets/Team_Profiles/Swanand_Kulkarni.png", import.meta.url).href,
         socials: {
           instagram: "https://www.instagram.com/swanand4902/",
           github: "https://github.com/SSK007-b",
@@ -96,7 +96,7 @@ const team = {
       {
         name: "Mansi Prasad",
         role: "Member",
-        img: "./assets/Team_Profiles/Mansi_Prasad.png",
+        img: new URL("../assets/Team_Profiles/Mansi_Prasad.png", import.meta.url).href,
         socials: {
           instagram: "https://instagram.com/_mansi_prasad",
           github: "https://github.com/mansiprasad034/",
@@ -106,7 +106,7 @@ const team = {
       {
         name: "Aatish Jawalkar",
         role: "Member",
-        img: "./assets/Team_Profiles/Aatish_Jawalkar.png",
+        img: new URL("../assets/Team_Profiles/Aatish_Jawalkar.png", import.meta.url).href,
         socials: {
           instagram: "https://instagram.com/aatish1804",
           github: "https://github.com/aatishmj",
@@ -118,7 +118,7 @@ const team = {
       {
         name: "Om Thakkar",
         role: "Development Head",
-        img: "./assets/Team_Profiles/Om_Thakkar.png",
+        img: new URL("../assets/Team_Profiles/Om_Thakkar.png", import.meta.url).href,
         socials: {
           instagram: "https://instagram.com/omthakkar343",
           github: "https://github.com/OmThakkar",
@@ -130,7 +130,7 @@ const team = {
       {
         name: "Ayush Deshpande",
         role: "Cloud Head",
-        img: "./assets/Team_Profiles/Ayush_Deshpande.png",
+        img: new URL("../assets/Team_Profiles/Ayush_Deshpande.png", import.meta.url).href,
         socials: {
           instagram: "https://instagram.com/ayush.arc",
           github: "github.com/asyndoggo",
@@ -142,7 +142,7 @@ const team = {
       {
         name: "Vedant Dumbhare",
         role: "Corporate Head",
-        img: "./assets/Team_Profiles/Vedant_Dumbhare.png",
+        img: new URL("../assets/Team_Profiles/Vedant_Dumbhare.png", import.meta.url).href,
         socials: {
           instagram: "https://www.instagram.com/_vspacebar20",
           github: "https://github.com/vpanada20",
@@ -154,7 +154,7 @@ const team = {
       {
         name: "Jaydatta Patwe",
         role: "Management Head",
-        img: "./assets/Team_Profiles/Jaydatta_Patwe.png",
+        img: new URL("../assets/Team_Profiles/Jaydatta_Patwe.png", import.meta.url).href,
         socials: {
           instagram: "https://instagram.com/_jaydatt._",
           github: "https://github.com/jaypatwe",

@@ -3,7 +3,7 @@ export default function Footer() {
     <footer id="footer" className="bg-color-primary-blue color-white">
       <div className="footer-container">
         <div className="footer-brand">
-          <img src="/assets/logos/logo_main.png" alt="" id="footer-brand-img" />
+          <img src={new URL("../assets/logos/logo_main.png", import.meta.url).href} alt="" id="footer-brand-img" />
           <a className="navbar-brand header-font-700" href="#">
             <span className="color-accent-blue">MLSC</span> MMCOE
           </a>

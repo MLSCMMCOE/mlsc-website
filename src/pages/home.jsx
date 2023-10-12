@@ -19,17 +19,17 @@ export default function HomePage() {
             <p className="body-font-500">Be A Force For Good.</p>
           </div>
           <div className="hero-img">
-            <img src="assets/logos/logo_main.png" alt="" id="hero-img" />
+            <img src={new URL('../assets/logos/logo_main.png', import.meta.url).href} alt="" id="hero-img" />
           </div>
         </div>
         <div className="icons">
-          <img src="assets/logos/teams.png" alt="" id="icon" />
-          <img src="assets/logos/office.png" alt="" id="icon" />
-          <img src="assets/logos/excel.png" alt="" id="icon" />
-          <img src="assets/logos/devops.png" alt="" id="icon" />
-          <img src="assets/logos/github.png" alt="" id="icon" />
-          <img src="assets/logos/azure.png" alt="" id="icon" />
-          <img src="assets/logos/linkedin.png" alt="" id="icon" />
+          <img src={new URL("../assets/logos/teams.png", import.meta.url).href} alt="" id="icon" />
+          <img src={new URL("../assets/logos/office.png", import.meta.url).href} alt="" id="icon" />
+          <img src={new URL("../assets/logos/excel.png", import.meta.url).href} alt="" id="icon" />
+          <img src={new URL("../assets/logos/devops.png", import.meta.url).href} alt="" id="icon" />
+          <img src={new URL("../assets/logos/github.png", import.meta.url).href} alt="" id="icon" />
+          <img src={new URL("../assets/logos/azure.png", import.meta.url).href} alt="" id="icon" />
+          <img src={new URL("../assets/logos/linkedin.png", import.meta.url).href} alt="" id="icon" />
         </div>
       </section>
       <section id="about">
@@ -85,7 +85,7 @@ export default function HomePage() {
           >
             <SwiperSlide>
               <img
-                src="assets/gallery_preview/1.jpg"
+                src={new URL("../assets/gallery_preview/1.jpg", import.meta.url).href}
                 class="d-block"
                 alt="image"
                 id="carousel-img"
@@ -101,7 +101,7 @@ export default function HomePage() {
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="assets/gallery_preview/3.jpg"
+                src={new URL("../assets/gallery_preview/3.jpg", import.meta.url).href}
                 class="d-block"
                 alt="image"
                 id="carousel-img"
@@ -109,7 +109,7 @@ export default function HomePage() {
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="assets/gallery_preview/4.jpg"
+                src={new URL("../assets/gallery_preview/4.jpg", import.meta.url).href}
                 class="d-block"
                 alt="image"
                 id="carousel-img"
@@ -117,7 +117,7 @@ export default function HomePage() {
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="assets/gallery_preview/5.jpg"
+                src={new URL("../assets/gallery_preview/5.jpg", import.meta.url).href}
                 class="d-block"
                 alt="image"
                 id="carousel-img"

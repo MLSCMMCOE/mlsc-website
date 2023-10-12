@@ -138,6 +138,7 @@ body {
 
 .nav-btn:hover {
   background-color: var(--color-black);
+  cursor: pointer;
 }
 
 /* Hero Section*/

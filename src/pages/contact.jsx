@@ -1,6 +1,6 @@
 import "../styles/contact.css";
 import { createClient } from "@supabase/supabase-js";
-import { useSnackbar } from "@brancol/react-snackbar";
+// import { useSnackbar } from "@brancol/react-snackbar";
 
 const supabase = createClient(
   "https://lacknclmlylgjprmmfpq.supabase.co",
@@ -8,7 +8,7 @@ const supabase = createClient(
 );
 
 export default function ContactPage() {
-  const snackBar = useSnackbar();
+  // const snackBar = useSnackbar();
 
   const HandleFormSubmit = async (e) => {
     e.preventDefault();
@@ -25,15 +25,17 @@ export default function ContactPage() {
       ]);
 
     if (error) {
-      snackBar.showDanger(error.message, {
-        position: "bc",
-        displayDuration: 5000,
-      });
+      // snackBar.showDanger(error.message, {
+      //   position: "bc",
+      //   displayDuration: 5000,
+      // });
+      alert(error.message)
     } else {
-      snackBar.showSuccess("Thank you for your submission!", {
-        position: "bc",
-        displayDuration: 5000,
-      });
+      // snackBar.showSuccess("Thank you for your submission!", {
+      //   position: "bc",
+      //   displayDuration: 5000,
+      // });
+      alert("Thank you for your submission!")
       e.target.reset();
     }
   };
@@ -46,7 +48,7 @@ export default function ContactPage() {
             <div class="left">
               {" "}
               <img
-                src="../assets/logos/Contact us-bro.svg"
+                src={new URL('../assets/logos/Contact us-bro.svg', import.meta.url).href}
                 alt=""
                 id="contact-img"
               />{" "}

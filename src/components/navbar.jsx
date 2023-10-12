@@ -60,7 +60,7 @@ export default function NavBar() {
             <Link to={"/contact"} className="nav-btn body-font-500 bg-color-primary-blue
                 color-white">
               <li className="nav-item">
-                 Contact Us
+                Contact Us
               </li>
             </Link>
           </ul>
