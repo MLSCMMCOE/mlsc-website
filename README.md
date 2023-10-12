@@ -1,8 +1,19 @@
-# React + Vite
+# MLSC MMCOE Website
+This is the official repository for the website of Microsoft Learn Software Club, MMCOE.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# How to run the website locally
+Clone the repository
+```bash
+git clone https://github.com/mlscmmcoe/mlsc-website.git
+```
+Install the dependencies using 
+```bash
+npm install
+```
+Run the website using 
+```bash
+npm run dev
+```
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Contributing
+[See CONTRIBUTING.md](CONTRIBUTING.md)
