@@ -6,6 +6,7 @@ import "../styles/home.css";
 import TestimonialCard from "../components/testimonialcard";
 import testimonials from "./testimonial_data";
 import { Link } from "react-router-dom";
+import GallerySection from "../components/swiper";
 
 export default function HomePage() {
   return (
@@ -23,13 +24,13 @@ export default function HomePage() {
           </div>
         </div>
         <div className="icons">
-          <img src={new URL("../assets/logos/teams.png", import.meta.url).href} alt="" id="icon" />
-          <img src={new URL("../assets/logos/office.png", import.meta.url).href} alt="" id="icon" />
-          <img src={new URL("../assets/logos/excel.png", import.meta.url).href} alt="" id="icon" />
-          <img src={new URL("../assets/logos/devops.png", import.meta.url).href} alt="" id="icon" />
-          <img src={new URL("../assets/logos/github.png", import.meta.url).href} alt="" id="icon" />
-          <img src={new URL("../assets/logos/azure.png", import.meta.url).href} alt="" id="icon" />
-          <img src={new URL("../assets/logos/linkedin.png", import.meta.url).href} alt="" id="icon" />
+          <img src={new URL("../assets/logos/teams.png", import.meta.url).href} alt="" id="icon"/>
+          <img src={new URL("../assets/logos/office.png", import.meta.url).href} alt="" id="icon"/>
+          <img src={new URL("../assets/logos/excel.png", import.meta.url).href} alt="" id="icon"/>
+          <img src={new URL("../assets/logos/devops.png", import.meta.url).href} alt="" id="icon"/>
+          <img src={new URL("../assets/logos/github.png", import.meta.url).href} alt="" id="icon"/>
+          <img src={new URL("../assets/logos/azure.png", import.meta.url).href} alt="" id="icon"/>
+          <img src={new URL("../assets/logos/linkedin.png", import.meta.url).href} alt="" id="icon"/>
         </div>
       </section>
       <section id="about">
@@ -76,55 +77,8 @@ export default function HomePage() {
 
       <section id="gallery-section">
         <h1 class="header-font-700">Gallery</h1>
-        <div className="gallery-container">
-          <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
-            navigation={true}
-            spaceBetween={50}
-            pagination={{ clickable: true }}
-          >
-            <SwiperSlide>
-              <img
-                src={new URL("../assets/gallery_preview/1.jpg", import.meta.url).href}
-                class="d-block"
-                alt="image"
-                id="carousel-img"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src="assets/gallery_preview/2.jpg"
-                class="d-block"
-                alt="image"
-                id="carousel-img"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src={new URL("../assets/gallery_preview/3.jpg", import.meta.url).href}
-                class="d-block"
-                alt="image"
-                id="carousel-img"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src={new URL("../assets/gallery_preview/4.jpg", import.meta.url).href}
-                class="d-block"
-                alt="image"
-                id="carousel-img"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src={new URL("../assets/gallery_preview/5.jpg", import.meta.url).href}
-                class="d-block"
-                alt="image"
-                id="carousel-img"
-              />
-            </SwiperSlide>
-          </Swiper>
-        </div>
+        
+        <GallerySection />
 
         <button className="gallery_btn">
           <Link to={"/gallery"} class="btn bg-color-primary-blue color-white">
