@@ -10,3 +10,7 @@
 .card:hover {
     transform: translateY(-12px);
   }
+  .gallery_btn{
+    border: none;
+    height: 30%;
+  }
