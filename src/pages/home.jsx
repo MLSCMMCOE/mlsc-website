@@ -24,13 +24,13 @@ export default function HomePage() {
           </div>
         </div>
         <div className="icons">
-          <img src={new URL("../assets/logos/teams.png", import.meta.url).href} alt="" id="icon"  className=""/>
-          <img src={new URL("../assets/logos/office.png", import.meta.url).href} alt="" id="icon" className="" />
-          <img src={new URL("../assets/logos/excel.png", import.meta.url).href} alt="" id="icon"  className=""/>
-          <img src={new URL("../assets/logos/devops.png", import.meta.url).href} alt="" id="icon" className="" />
-          <img src={new URL("../assets/logos/github.png", import.meta.url).href} alt="" id="icon" className="" />
-          <img src={new URL("../assets/logos/azure.png", import.meta.url).href} alt="" id="icon"  className=""/>
-          <img src={new URL("../assets/logos/linkedin.png", import.meta.url).href} alt="" id="icon"  className=""/>
+          <img src={new URL("../assets/logos/teams.png", import.meta.url).href} alt="" id="icon"/>
+          <img src={new URL("../assets/logos/office.png", import.meta.url).href} alt="" id="icon"/>
+          <img src={new URL("../assets/logos/excel.png", import.meta.url).href} alt="" id="icon"/>
+          <img src={new URL("../assets/logos/devops.png", import.meta.url).href} alt="" id="icon"/>
+          <img src={new URL("../assets/logos/github.png", import.meta.url).href} alt="" id="icon"/>
+          <img src={new URL("../assets/logos/azure.png", import.meta.url).href} alt="" id="icon"/>
+          <img src={new URL("../assets/logos/linkedin.png", import.meta.url).href} alt="" id="icon"/>
         </div>
       </section>
       <section id="about">
