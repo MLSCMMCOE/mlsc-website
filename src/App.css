@@ -300,7 +300,7 @@ body {
 .gallery_btn{
   border: none;
   height: 30%;
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
 nav .slider {
