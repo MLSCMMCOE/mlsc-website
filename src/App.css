@@ -616,7 +616,7 @@ h3 {
 }
 
 #footer-brand-img {
-  height: 60px;
+  height: 120px;
 }
 
 .footer-brand {
@@ -660,17 +660,32 @@ h3 {
 }
 
 .social-id {
-  display: inline-flex;
-  flex-direction: row;
+  display: inline-block;
+  position: relative;
   gap: 12px;
   align-items: center;
   color: var(--color-white);
   text-decoration: none;
 }
 
-.social-id:hover {
-  text-decoration: underline;
+.social-id:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-white);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
+
+.social-id:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 
 .social-id p {
   margin: 0;
