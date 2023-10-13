@@ -3,8 +3,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/bundle";
 import "../styles/home.css";
+import "../styles/connect_button.css";
+import "../styles/hero.css";
+import "../styles/about.css";
 import TestimonialCard from "../components/testimonialcard";
 import testimonials from "./testimonial_data";
+import "../styles/testimonials.css";
 import { Link } from "react-router-dom";
 import GallerySection from "../components/swiper";
 
