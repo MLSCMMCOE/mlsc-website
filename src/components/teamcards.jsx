@@ -2,6 +2,7 @@ import TeamCard from "./teamcard";
 import team from "./team_data";
 import { useEffect, useState } from "react";
 import Typewriter from 'typewriter-effect/dist/core';
+import "../styles/team_section.css";
 
 
 export default function TeamSection() {
