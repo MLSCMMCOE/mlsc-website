@@ -27,3 +27,11 @@
     background-color: var(--color-black);
     cursor: pointer;
   }
+  
+  #events-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5% 7.5%;
+  }
