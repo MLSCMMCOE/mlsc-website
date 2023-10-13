@@ -1,0 +1,29 @@
+/* Navbar */
+.navbar {
+    padding: 20px 7.5%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: var(--color-white);
+    opacity: 0.95;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    font-size: 25px;
+  }
+  
+  .navbar-nav {
+    gap: 15px;
+  }
+  
+  .nav-btn {
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  
+  .nav-btn:hover {
+    background-color: var(--color-black);
+    cursor: pointer;
+  }
