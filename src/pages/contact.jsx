@@ -1,6 +1,6 @@
 import "../styles/contact.css";
 import { createClient } from "@supabase/supabase-js";
-// import { useSnackbar } from "@brancol/react-snackbar";
+import { SnackbarProvider, enqueueSnackbar } from 'notistack';
 
 const supabase = createClient(
   "https://lacknclmlylgjprmmfpq.supabase.co",
@@ -25,23 +25,23 @@ export default function ContactPage() {
       ]);
 
     if (error) {
-      // snackBar.showDanger(error.message, {
-      //   position: "bc",
-      //   displayDuration: 5000,
-      // });
-      alert(error.message)
+      let message
+      if (error.message.includes('duplicate key value violates unique constraint')) {
+        message = 'You have already submitted a message with this email address. Please wait for a response or use a different email address.'
+      }
+      else{
+        message = error.message
+      }
+      enqueueSnackbar(message, { variant: 'error', autoHideDuration: 5000 });
     } else {
-      // snackBar.showSuccess("Thank you for your submission!", {
-      //   position: "bc",
-      //   displayDuration: 5000,
-      // });
-      alert("Thank you for your submission!")
+      enqueueSnackbar("Thank you for your submission!", { variant: 'success', autoHideDuration: 5000 });
       e.target.reset();
     }
   };
 
   return (
     <>
+      <SnackbarProvider />
       <section id="contact">
         <div class="contact-container body-font-regular">
           <div class="contact-box bg-color-white">
