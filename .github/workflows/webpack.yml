@@ -1,5 +1,7 @@
 name: NodeJS build and push
-
+permissions:
+    contents: write 
+    
 on:
   push:
     branches: [ "Main" ]
@@ -29,4 +31,11 @@ jobs:
          git config --global user.name "asyncdoggo"
          git config --global user.email "asyncdoggo@users.noreply.github.com"
          npx gh-pages -d dist -b gh-pages
-      
+    
+    - uses: actions/checkout@v3
+    - name: Create report file
+      run: |
+       git config --global user.name 'Ayush Deshpande'
+       git config --global user.email 'asyncdoggo@users.noreply.github.com'
+       npx gh-pages -d dist -b gh-pages
+          
