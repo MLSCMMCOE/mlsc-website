@@ -98,13 +98,10 @@ body {
   z-index: 100;
 }
 
-.connect-button:hover {
-  background-color: var(--color-black);
-}
-
 .connect-button a {
   text-decoration: none;
   padding: 15px 20px;
+  cursor: pointer; /* Cursor pointer for the button */
 }
 
 #connect-btn-icon {
@@ -135,6 +132,14 @@ body {
   text-decoration: none;
   border-radius: 10px;
 }
+
+.nav-btn:hover {
+  background-color: var(--color-black);
+  cursor: pointer;
+}
+
+/* Rest of your CSS... */
+
 
 .nav-btn:hover {
   background-color: var(--color-black);
