@@ -503,6 +503,12 @@ input[type="radio"] {
   margin: 0 0 40px;
 }
 
+.gallery_btn{
+  border: none;
+  height: 30%;
+  background-color: transparent 
+}
+
 #carousel-img {
   object-fit: cover;
   height: 60vh;
@@ -934,8 +940,4 @@ hr{
     text-align: center;
   }
 }
-.gallery_btn{
-  border: none;
-  height: 30%;
-  background-color: transparent !important;
-}
+
