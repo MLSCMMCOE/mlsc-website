@@ -160,7 +160,6 @@ const team = {
       role: "Member",
       img: new URL("../assets/Team_Profiles/Saksham_Avasthi.png", import.meta.url).href,
       socials: {
-        instagram: "",
         github: "https://github.com/dumaloo",
         linkedin: "https://www.linkedin.com/in/om-thakkar-482b471b0",
       },
@@ -183,7 +182,6 @@ const team = {
       role: "Member",
       img: new URL("../assets/Team_Profiles/AtharvNalwade_member.png", import.meta.url).href,
       socials: {
-        instagram: "",
         github: "https://github.com/Atharv-Nalwade",
         linkedin: "https://www.linkedin.com/in/iatharvn",
       },
