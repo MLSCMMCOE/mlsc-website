@@ -302,7 +302,9 @@ body {
   height: 30%;
   background-color: transparent;
 }
-
+#cursor_default {
+  cursor: default;
+}
 nav .slider {
   position: absolute;
   height: 100%;
