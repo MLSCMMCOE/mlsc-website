@@ -30,9 +30,9 @@ jobs:
         npm run build
     
     - uses: actions/checkout@v3
-    - name: Create report file
+    - name: Push to gh-pages
       run: |
        git config --global user.name 'Ayush Deshpande'
        git config --global user.email 'asyncdoggo@users.noreply.github.com'
-       npx gh-pages -d dist -b gh-pages
+       npx gh-pages -d ./dist -b gh-pages
           
