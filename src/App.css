@@ -297,11 +297,6 @@ body {
   color: #fff;
 } */
 
-.gallery_btn{
-  border: none;
-  height: 30%;
-}
-
 nav .slider {
   position: absolute;
   height: 100%;
@@ -938,4 +933,9 @@ hr{
   .footer-map-container p{
     text-align: center;
   }
+}
+.gallery_btn{
+  border: none;
+  height: 30%;
+  background-color: transparent !important;
 }
