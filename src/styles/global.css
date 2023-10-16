@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --color-white: #fafafa;
+  --color-black: #000000;
+  --color-primary-blue: #203960;
+  --color-accent-blue: #008ae3;
+  --header-font: "Montserrat", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+}
+
+.header-font-900 {
+  font-family: var(--header-font);
+  font-weight: 900;
+}
+
+.header-font-800 {
+  font-family: var(--header-font);
+  font-weight: 800;
+}
+
+.header-font-700 {
+  font-family: var(--header-font);
+  font-weight: 700;
+}
+
+.header-font-600 {
+  font-family: var(--header-font);
+  font-weight: 600;
+}
+
+.header-font-500 {
+  font-family: var(--header-font);
+  font-weight: 500;
+}
+
+.header-font-regular {
+  font-family: var(--header-font);
+  font-weight: 400;
+}
+
+.body-font-500 {
+  font-family: var(--body-font);
+  font-weight: 500;
+}
+
+.body-font-regular {
+  font-family: var(--body-font);
+  font-weight: 400;
+}
+
+.color-white {
+  color: var(--color-white);
+}
+
+.color-black {
+  color: var(--color-black);
+}
+
+.color-primary-blue {
+  color: var(--color-primary-blue);
+}
+
+.color-accent-blue {
+  color: var(--color-accent-blue);
+}
+
+.bg-color-white {
+  background-color: var(--color-white);
+}
+
+.bg-color-black {
+  background-color: var(--color-black);
+}
+
+.bg-color-primary-blue {
+  background-color: var(--color-primary-blue);
+}
+
+.bg-color-accent-blue {
+  background-color: var(--color-accent-blue);
+}
+
+body {
+  background-color: var(--color-white);
+  font-family: var(--body-font);
+}
