@@ -35,3 +35,28 @@
     text-align: center;
     padding: 5% 7.5%;
   }
+  @media (max-width: 991px) {
+    .navbar {
+      padding: 20px 3%;
+    }
+  
+    .navbar-nav {
+      gap: 5px;
+    }
+    .nav-link {
+      padding: 7px;
+    }
+  
+    .nav-btn {
+      padding: 10px 20px;
+      margin-left: -10px;
+      margin: 10px 0;
+      text-decoration: none;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 20px;
+    }
+  }
