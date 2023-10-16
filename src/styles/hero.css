@@ -42,3 +42,40 @@
   #icon {
     height: 50px;
   }
+
+  @media (max-width: 991px) {
+    #hero {
+    padding: 50px 0%;
+    text-align: center;
+   }
+  .hero-container {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 30px;
+   }
+   .hero-container h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+  }
+  .hero-container {
+    font-size: 16px;
+  }
+  #hero-img{
+    height: 225px;
+  }
+  }
+  @media (max-width: 576px) {
+    .hero-content {
+      width: 95%;
+      margin: auto;
+    }
+    .hero-container h1 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    #hero-img {
+    height: 200px;
+    margin: 0;
+  }
+  }

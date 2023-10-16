@@ -13,51 +13,31 @@
     height: auto;
   }
 
-  .navbar {
-    padding: 20px 3%;
-  }
+  
 
-  .navbar-nav {
-    gap: 5px;
-  }
+  
 
-  .nav-link {
-    padding: 7px;
-  }
-
-  .nav-btn {
-    padding: 10px 20px;
-    margin-left: -10px;
-    margin: 10px 0;
-    text-decoration: none;
-  }
-
-  #hero,
+  
   #about,
   #gallery-section {
     padding: 50px 0%;
     text-align: center;
   }
 
-  .hero-container,
+  
   .about-container {
     flex-direction: column-reverse;
     justify-content: space-between;
     gap: 30px;
   }
 
-  .hero-container h1 {
-    font-size: 40px;
-    line-height: 1.2;
-    margin-bottom: 25px;
-  }
+  
 
-  .hero-container,
+  
   .about-container p {
     font-size: 16px;
   }
 
-  #hero-img,
   #about-img {
     height: 225px;
   }
@@ -116,21 +96,12 @@
 }
 
 @media (max-width: 576px) {
-  .navbar-brand {
-    font-size: 20px;
-  }
+  
 
-  .hero-content {
-    width: 95%;
-    margin: auto;
-  }
+  
 
-  .hero-container h1 {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
+  
 
-  #hero-img,
   #about-img {
     height: 200px;
     margin: 0;
