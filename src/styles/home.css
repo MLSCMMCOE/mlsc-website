@@ -13,4 +13,12 @@
   .gallery_btn{
     border: none;
     height: 30%;
+    background-color: transparent;
+  }
+
+  @media (max-width: 991px) {
+    
+    #icon {
+      height: 30px;
+    }
   }

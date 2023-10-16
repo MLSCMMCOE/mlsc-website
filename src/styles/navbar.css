@@ -55,8 +55,20 @@
     }
   }
 
+  @media (max-width: 768px) {
+    nav.desk-view-tabs {
+      display: none;
+    }
+    #event-section {
+    padding: 10% 0;
+  } 
+  }
+
   @media (max-width: 576px) {
     .navbar-brand {
       font-size: 20px;
     }
+    #events-section {
+    padding: 10% 20px;
+  }
   }

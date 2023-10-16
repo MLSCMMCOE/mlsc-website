@@ -59,3 +59,19 @@
     background: #2037601e;
     border-radius: 50px;
   }
+  @media (max-width: 768px) {
+    #team-section {
+    padding: 10% 0;
+   }
+  }
+  @media (max-width: 576px) {
+    #team-section h1 {
+      font-size: 30px;
+    }
+    #app {
+      font-size: 16px;
+    }
+    .member-cards {
+      gap: 30px;
+    }
+  }

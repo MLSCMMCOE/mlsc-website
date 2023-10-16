@@ -70,3 +70,18 @@
   .card-header p {
     font-size: 12px;
   }
+
+  @media (max-width: 768px) {
+    #testimonials-section {
+      padding: 10% 0;
+    } 
+  }
+  
+  @media (max-width: 576px) {
+    #testimonials-section {
+      padding: 10% 20px;
+    }
+    .testimonial-container {
+      width: 100%;
+    }
+   }

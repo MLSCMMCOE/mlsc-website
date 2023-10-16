@@ -64,6 +64,13 @@
   #hero-img{
     height: 225px;
   }
+  .icons {
+    margin: 30px auto;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   }
   @media (max-width: 576px) {
     .hero-content {

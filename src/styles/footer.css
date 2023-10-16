@@ -102,3 +102,42 @@
     text-align: center;
     padding-top: 25px;
   }
+
+  @media (max-width: 576px) { 
+    #footer{
+      padding: 75px 20px;
+    }
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5rem;
+    }
+    .social-icons {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      margin: 0;
+    }
+    .social-id {
+      flex-direction: row;
+      gap: 10px;
+    }
+  
+    .social-links{
+      align-items: center;
+    }
+  
+    .effect::after {
+      width: 130px;
+    }
+  
+    .footer-map-container {
+      align-items: center;
+    }
+  
+    .footer-map-container p{
+      text-align: center;
+    }
+  }

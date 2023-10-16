@@ -187,3 +187,18 @@ nav .slider {
     transform: translateY(-5px);
     transition: all 0.15s;
   }
+
+  @media (max-width: 768px) {
+    .dropdown {
+      display: block;
+      text-align: center;
+    }
+  }
+
+
+  @media (max-width: 576px) { 
+    .cards-container {
+      gap: 30px;
+      margin: 45px auto 0;
+    }
+  }
