@@ -22,3 +22,12 @@
   #connect-btn-icon {
     margin-right: 10px;
   }
+
+  @media (max-width: 768px) {
+    #connect-btn-label {
+      display: none;
+    }
+    #connect-btn-icon {
+      margin: 0;
+    }
+  }
