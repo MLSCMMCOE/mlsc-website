@@ -66,7 +66,7 @@ export default function HomePage() {
             </p>
           </div>
           <div className="about-img">
-            <img src="assets/logos/about-img.svg" alt="" id="about-img" />
+            <img src={new URL("../assets/logos/about-img.svg", import.meta.url).href} alt="" id="about-img" />
           </div>
         </div>
       </section>
