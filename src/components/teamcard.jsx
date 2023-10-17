@@ -16,7 +16,7 @@ export default function TeamCard({ name, role, img, socials }) {
         {Object.keys(socials).map((social) => {
           return (
             <button className={`card-socials-btn ${social}`}>
-              <a href={socials[social]}>
+              <a href={socials[social]} target="_blank">
                 {social === "instagram" ? (
                   <>
                     <svg
