@@ -128,7 +128,7 @@ const team = {
     {
       name: "Suyash Kirdakar",
       role: "Member",
-      img: new URL("../assets/Team_Profiles/Suyash_Kirdakar.png", import.meta.url).href,
+      img: new URL("../assets/Team_Profiles/suyash_kirdakar.png", import.meta.url).href,
       socials: {
         instagram: "https://instagram.com/suyash2k04",
         github: "https://github.com/suyash2k04",
@@ -211,7 +211,7 @@ const team = {
     {
       name: "Ojasvi Pawar",
       role: "Member",
-      img: new URL("../assets/Team_Profiles/Ojasvi_Pawar.png", import.meta.url).href,
+      img: new URL("../assets/Team_Profiles/Ojasvi_pawar.png", import.meta.url).href,
       socials: {
         instagram: "https://instagram.com/_.ojasvii._",
         github: "https://github.com/Ojasvip26",
@@ -243,7 +243,7 @@ const team = {
     {
       name: "Sanika Thite",
       role: "Member",
-      img: new URL("../assets/Team_Profiles/Sanika_Thite.png", import.meta.url).href,
+      img: new URL("../assets/Team_Profiles/sanika_Thite.png", import.meta.url).href,
       socials: {
         instagram: "https://instagram.com/sanika_0209_",
         github: "https://github.com/Sanikathite",
