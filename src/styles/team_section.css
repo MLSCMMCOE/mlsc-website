@@ -1,0 +1,77 @@
+/* Team Section */
+#team-section {
+    text-align: center;
+    padding: 5% 0;
+  }
+  
+  #team-section h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+  
+  #app {
+    font-size: 20px;
+    padding: 20px;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .wrapper {
+    margin: 2% 7.5% 0;
+    border-radius: 5px;
+  }
+  
+  .wrapper header {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+  }
+  
+  .wrapper nav {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .wrapper nav label {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    color: var(--color-black);
+    font-size: 17px;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .wrapper nav label:hover {
+    background: #2037601e;
+    border-radius: 50px;
+  }
+  @media (max-width: 768px) {
+    #team-section {
+    padding: 10% 0;
+   }
+  }
+  @media (max-width: 576px) {
+    #team-section h1 {
+      font-size: 30px;
+    }
+    #app {
+      font-size: 16px;
+    }
+    .member-cards {
+      gap: 30px;
+    }
+  }
