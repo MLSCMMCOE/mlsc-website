@@ -84,7 +84,7 @@ export default function HomePage() {
         
         <GallerySection />
 
-        <button className="gallery_btn">
+        <button  id="cursor_default" className="gallery_btn">
           <Link to={"/gallery"} class="btn bg-color-primary-blue color-white">
             Visit Gallery
           </Link>

@@ -14,6 +14,7 @@ import GalleryPage from "./pages/gallery.jsx";
 import NavBar from "./components/navbar.jsx";
 import Footer from "./components/footer.jsx";
 import ContactPage from "./pages/contact.jsx";
+import AdminPage from "./pages/admin.jsx";
 
 
 
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <ContactPage />,
       },
+      {
+        path: "/admin",
+        element: <AdminPage />,
+      }
     ],
   },
 ]);
