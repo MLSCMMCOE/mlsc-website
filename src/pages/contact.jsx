@@ -43,9 +43,9 @@ export default function ContactPage() {
     <>
       <SnackbarProvider />
       <section id="contact">
-        <div class="contact-container body-font-regular">
-          <div class="contact-box bg-color-white">
-            <div class="left">
+        <div className="contact-container body-font-regular">
+          <div className="contact-box bg-color-white">
+            <div className="left">
               {" "}
               <img
                 src={new URL('../assets/logos/Contact us-bro.svg', import.meta.url).href}
@@ -53,26 +53,26 @@ export default function ContactPage() {
                 id="contact-img"
               />{" "}
             </div>
-            <div class="right">
-              <h2 class="header-font-700">Contact Us</h2>
+            <div className="right">
+              <h2 className="header-font-700">Contact Us</h2>
               <form id="contact_form" onSubmit={HandleFormSubmit}>
                 <input
                   type="text"
-                  class="field"
+                  className="field"
                   name="name"
                   placeholder="Your Name"
                   required
                 />
                 <input
                   type="email"
-                  class="field"
+                  className="field"
                   name="email"
                   placeholder="Your Email"
                   required
                 />
                 <input
                   type="text"
-                  class="field"
+                  className="field"
                   name="subject"
                   placeholder="Subject"
                   required
@@ -81,9 +81,9 @@ export default function ContactPage() {
                   placeholder="Message"
                   name="message"
                   g
-                  class="field"
+                  className="field"
                 ></textarea>
-                <button type="submit" class="btn">
+                <button type="submit" className="btn">
                   Send
                 </button>
               </form>

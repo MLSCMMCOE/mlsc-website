@@ -5,22 +5,22 @@ export default function TestimonialCard({
     testimonial
 }) {
     return (
-        <div class="testimonial-card">
-            <div class="card-header">
+        <div className="testimonial-card">
+            <div className="card-header">
                 <img
                     src={avatar}
                     alt=""
                     id="avatar"
                 />
-                <div class="author">
-                    <h3 class="author-name header-font-700">{name}</h3>
-                    <p class="author-desc">
+                <div className="author">
+                    <h3 className="author-name header-font-700">{name}</h3>
+                    <p className="author-desc">
                         {designation}
                     </p>
                 </div>
             </div>
-            <div class="card-content">
-                <p class="body-font-regular">
+            <div className="card-content">
+                <p className="body-font-regular">
                     "{testimonial}"
                 </p>
             </div>

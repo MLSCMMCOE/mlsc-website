@@ -27,7 +27,7 @@ export default () => {
           <SwiperSlide key={image}>
             <img
               src={new URL(`${image}`, import.meta.url).href}
-              class="d-block"
+              className="d-block"
               alt="image"
               id="carousel-img"
             />
