@@ -6,7 +6,8 @@ import "../styles/team_section.css";
 import "../styles/teamcard.css";
 
 export default function TeamSection() {
-  const [selected, setSelected] = useState("Core");
+  const [selected, setSelected] = useState(sessionStorage.getItem("selected")? sessionStorage.getItem("selected") : "Core");
+
 
   useEffect(() => {
     const app = document.getElementById("typewriter");
@@ -38,8 +39,6 @@ export default function TeamSection() {
   const handleSelect = (key) => {
     setSelected(key);
     sessionStorage.setItem("selected", key);
-    let data = sessionStorage.getItem("selected");
-    console.log(data);
   };
 
   return (
@@ -100,8 +99,7 @@ export default function TeamSection() {
             <div className="content-holder">
               <div className="cards-container">
                 <div className="member-cards">
-                  {/* render the content section for selected key */}
-                  {team[sessionStorage.getItem("selected")].map((member) => (
+                  {team[selected].map((member) => (
                     <TeamCard {...member} key={member.id} />
                   ))}
                 </div>
