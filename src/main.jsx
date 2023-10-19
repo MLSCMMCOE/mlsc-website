@@ -4,8 +4,7 @@ import App from "./App.jsx";
 import './styles/global.css'
 
 import {
-  BrowserRouter,
-  createBrowserRouter,
+  createHashRouter,
   Outlet,
   RouterProvider,
 } from "react-router-dom";
@@ -28,7 +27,7 @@ const Layout = () => {
   );
 };
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     element: <Layout />,
     children: [
