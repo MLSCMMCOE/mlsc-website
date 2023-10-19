@@ -2,11 +2,7 @@ export default function TeamCard({ name, role, img, socials }) {
   return (
     <div className="card">
       <div className="card-photo">
-        <img
-          src={img}
-          alt={name}
-          className="card-img"
-        />
+        <img src={img} alt={name} className="card-img" />
       </div>
       <div className="card-title">
         {name} <br />
@@ -15,8 +11,8 @@ export default function TeamCard({ name, role, img, socials }) {
       <div className="card-socials">
         {Object.keys(socials).map((social) => {
           return (
-            <button className={`card-socials-btn ${social}`}>
-              <a href={socials[social]} target="_blank">
+            <button className={`card-socials-btn ${social}`} key={social}>
+              <a href={socials[social]} >
                 {social === "instagram" ? (
                   <>
                     <svg

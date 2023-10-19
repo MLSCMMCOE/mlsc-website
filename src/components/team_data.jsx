@@ -173,7 +173,7 @@ const team = {
       img: new URL("../assets/Team_Profiles/Ayush_Deshpande.png", import.meta.url).href,
       socials: {
         instagram: "https://instagram.com/ayush.arc",
-        github: "github.com/asyndoggo",
+        github: "https://github.com/asyndoggo",
         linkedin: "https://linkedin.com/in/ayush-deshpande",
       },
     },
