@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
 import "../styles/navbar.css";
+import { HashLink } from "react-router-hash-link";
 
 export default function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
-        <Link className="navbar-brand header-font-700" to={"/"}>
+        <HashLink className="navbar-brand header-font-700" to={"/"}>
           <span className="color-accent-blue">MLSC</span> MMCOE
-        </Link>
+        </HashLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -22,48 +22,48 @@ export default function NavBar() {
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link
+              <HashLink
                 className="nav-link body-font-500"
                 aria-current="page"
                 to="/"
               >
                 Home
-              </Link>
+              </HashLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/#about">
+              <HashLink className="nav-link" to="#about">
                 About
-              </a>
+              </HashLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link body-font-500" href="/#team-section">
+              <HashLink className="nav-link body-font-500" to="#team-section">
                 Team
-              </a>
+              </HashLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link body-font-500" href="/#events-section">
+              <HashLink className="nav-link body-font-500" to="#events-section">
                 Events
-              </a>
+              </HashLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link body-font-500" href="/#gallery-section">
+              <HashLink className="nav-link body-font-500" to="#gallery-section">
                 Gallery
-              </a>
+              </HashLink>
             </li>
             <li className="nav-item">
-              <a
+              <HashLink
                 className="nav-link body-font-500"
-                href="/#testimonials-section"
+                to="#testimonials-section"
               >
                 Testimonials
-              </a>
+              </HashLink>
             </li>
-            <Link to={"/contact"} className="nav-btn body-font-500 bg-color-primary-blue
+            <HashLink to={"/contact"} className="nav-btn body-font-500 bg-color-primary-blue
                 color-white">
               <li className="nav-item">
                 Contact Us
               </li>
-            </Link>
+            </HashLink>
           </ul>
         </div>
       </div>
