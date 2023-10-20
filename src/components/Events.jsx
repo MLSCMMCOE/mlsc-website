@@ -1,13 +1,13 @@
-import TeamCard from "./teamcard";
+
 import Event from "./Event";
-import team from "./event_data";
+import event from "./event_data";
 import { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect/dist/core";
 import "../styles/team_section.css";
 import "../styles/teamcard.css";
 
 export default function TeamSection() {
-  const [selected, setSelected] = useState(sessionStorage.getItem("selected")? sessionStorage.getItem("selected") : 'Upcomming');
+  const [selected_event, setselected_event] = useState(sessionStorage.getItem("selected_event_event")? sessionStorage.getItem("selected_event") : 'Upcomming');
 
 const [cur,setCur]=useState('Upcomming')
   useEffect(() => {
@@ -38,34 +38,35 @@ const [cur,setCur]=useState('Upcomming')
   }, []);
 
   const handleSelect = (key) => {
-    setSelected(key);
+    setselected_event(key);
     setCur(key)
-    sessionStorage.setItem("selected", key);
+    
+    sessionStorage.setItem("selected_event", key);
   };
 
   return (
     <>
       <section id="team-section">
         <h1 className="header-font-700">Our Events</h1>
-        <div id="typewriter" className="body-font-500 team-quotes"></div>
+      
         <div className="wrapper">
-          {Object.keys(team).map((key) => (
+          {Object.keys(event).map((key) => (
             <input
               type="radio"
               name="slider"
               id={key}
-              checked={selected === key}
+              checked={selected_event === key}
               onChange={() => handleSelect(key)}
               key={key}
             />
           ))}
           <nav  className="desk-view-tabs">
-            {Object.keys(team).map((key) => (
+            {Object.keys(event).map((key) => (
               <label htmlFor={key}  className={key} key={key}>
                 {key}
               </label>
             ))}
-            <div className="slider1"></div>
+        
           </nav>
           <div className="dropdown">
             <button
@@ -75,10 +76,10 @@ const [cur,setCur]=useState('Upcomming')
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              {selected}
+              {selected_event}
             </button>
             <ul className="dropdown-menu">
-              {Object.keys(team).map((key) => (
+              {Object.keys(event).map((key) => (
                 <li key={key}>
                   <label
                     htmlFor={key}
@@ -88,7 +89,7 @@ const [cur,setCur]=useState('Upcomming')
                     <input
                       type="radio"
                       id={key}
-                      checked={selected === key}
+                      checked={selected_event === key}
                       onChange={() => handleSelect(key)}
                     />
                     {key}
@@ -101,10 +102,10 @@ const [cur,setCur]=useState('Upcomming')
             <div className="content-holder">
               <div className="cards-container">
                 <div className="member-cards">
-                {team[cur].map((member) => {
+                {event[cur].map((member) => {
                     console.log(member.id)
                     return(
-                    <Event {...member} />)
+                    <Event {...member} key={member.id}/>)
                 })}
                 </div>
               </div>
