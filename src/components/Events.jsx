@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect/dist/core";
 import "../styles/team_section.css";
 import "../styles/teamcard.css";
+import '../styles/eventcard.css'
 
 export default function TeamSection() {
   const [selected_event, setselected_event] = useState(sessionStorage.getItem("selected_event_event")? sessionStorage.getItem("selected_event") : 'Upcomming');
