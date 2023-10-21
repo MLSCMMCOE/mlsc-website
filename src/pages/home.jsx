@@ -41,7 +41,7 @@ export default function HomePage() {
         <div className="about-container">
           <div className="about-content">
             <h2 className="header-font-700">Who are we?</h2>
-            <p className="body-font-regular">
+            <p className="body-font-regular" style={{ textAlign: 'justify' }}>
               In June 2023, the Microsoft Learn Students' Club was established
               in order to promote technological growth by using different
               Microsoft technologies. Through a friendly, supportive and
