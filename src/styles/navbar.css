@@ -5,6 +5,8 @@
     background-color: var(--color-white);
     opacity: 0.95;
     align-items: center;
+    background: transparent; 
+    transition: background 0.3s;
   }
   
   .navbar-brand {
@@ -72,3 +74,7 @@
     padding: 10% 20px;
   }
   }
+.navbar.sticky {
+  background: #fff; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
