@@ -1,9 +1,28 @@
+import React, { useEffect, useState } from 'react';
 import "../styles/navbar.css";
 import { HashLink } from "react-router-hash-link";
 
 export default function NavBar() {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className={`navbar navbar-expand-lg${isSticky ? ' sticky' : ''}`}>
       <div className="container-fluid">
         <HashLink className="navbar-brand header-font-700" to={"/"}>
           <span className="color-accent-blue">MLSC</span> MMCOE
