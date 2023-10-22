@@ -82,6 +82,7 @@ export default function ContactPage() {
                   name="message"
                   g
                   className="field"
+                  style={{ resize: "none" }}
                 ></textarea>
                 <button type="submit" className="btn">
                   Send
