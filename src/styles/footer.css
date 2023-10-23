@@ -36,18 +36,37 @@
   
   .effect {
     position: relative;
+    padding-bottom: 10px;
+    width: 100%;
   }
   
   .effect::after {
     position: absolute;
-    bottom: -10px;
+    bottom: 5px;
     left: 0;
     content: "";
     background-color: var(--color-accent-blue);
     height: 4px;
-    width: 50px;
+    width: 100%;
+
   }
   
+  .effect2{
+    position: relative;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+
+  .effect2::after {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    content: "";
+    background-color: var(--color-accent-blue);
+    height: 4px;
+    width: 65%;
+  }
+
   .social-links {
     display: flex;
     flex-direction: column;

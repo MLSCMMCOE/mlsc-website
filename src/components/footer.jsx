@@ -47,7 +47,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-section">
-          <h3 className="color-white header-font-700 effect">Find Us At</h3>
+          <h3 className="color-white header-font-700 effect2">Find Us At</h3>
           <div
             id="map"
             style={{
