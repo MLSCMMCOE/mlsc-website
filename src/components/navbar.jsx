@@ -63,7 +63,7 @@ export default function NavBar() {
             <li className="nav-item">
               <HashLink
                 className="nav-link body-font-500"
-                to="#testimonials-section"
+                to="/#testimonials-section"
               >
                 Testimonials
               </HashLink>
