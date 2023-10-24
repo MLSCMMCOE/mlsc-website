@@ -41,22 +41,22 @@ export default function NavBar() {
               </HashLink>
             </li>
             <li className="nav-item">
-              <HashLink className="nav-link" to="#about">
+              <HashLink className="nav-link" to="/#about">
                 About
               </HashLink>
             </li>
             <li className="nav-item">
-              <HashLink className="nav-link body-font-500" to="#team-section">
+              <HashLink className="nav-link body-font-500" to="/#team-section">
                 Team
               </HashLink>
             </li>
             <li className="nav-item">
-              <HashLink className="nav-link body-font-500" to="#events-section">
+              <HashLink className="nav-link body-font-500" to="/#events-section">
                 Events
               </HashLink>
             </li>
             <li className="nav-item">
-              <HashLink className="nav-link body-font-500" to="#gallery-section">
+              <HashLink className="nav-link body-font-500" to="/#gallery-section">
                 Gallery
               </HashLink>
             </li>
