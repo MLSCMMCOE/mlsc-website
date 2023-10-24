@@ -1,7 +1,17 @@
+import { useLocation } from "react-router-dom";
 import "../styles/navbar.css";
 import { HashLink } from "react-router-hash-link";
+import { useEffect } from "react";
 
 export default function NavBar() {
+  const location = useLocation()
+
+
+  useEffect(() => {
+    // scroll to top
+    window.scrollTo(0, 0)
+  },[location.pathname])
+
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
@@ -31,22 +41,22 @@ export default function NavBar() {
               </HashLink>
             </li>
             <li className="nav-item">
-              <HashLink className="nav-link" to="#about">
+              <HashLink className="nav-link" to="/#about">
                 About
               </HashLink>
             </li>
             <li className="nav-item">
-              <HashLink className="nav-link body-font-500" to="#team-section">
+              <HashLink className="nav-link body-font-500" to="/#team-section">
                 Team
               </HashLink>
             </li>
             <li className="nav-item">
-              <HashLink className="nav-link body-font-500" to="#events-section">
+              <HashLink className="nav-link body-font-500" to="/#events-section">
                 Events
               </HashLink>
             </li>
             <li className="nav-item">
-              <HashLink className="nav-link body-font-500" to="#gallery-section">
+              <HashLink className="nav-link body-font-500" to="/#gallery-section">
                 Gallery
               </HashLink>
             </li>
