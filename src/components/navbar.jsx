@@ -1,7 +1,17 @@
+import { useLocation } from "react-router-dom";
 import "../styles/navbar.css";
 import { HashLink } from "react-router-hash-link";
+import { useEffect } from "react";
 
 export default function NavBar() {
+  const location = useLocation()
+
+
+  useEffect(() => {
+    // scroll to top
+    window.scrollTo(0, 0)
+  },[location.pathname])
+
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
