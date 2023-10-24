@@ -20,7 +20,7 @@ export default function TestimonialCard({
                 </div>
             </div>
             <div className="card-content">
-                <p className="body-font-regular">
+                <p className="body-font-regular" style={{ textAlign: 'justify' }}>
                     "{testimonial}"
                 </p>
             </div>
