@@ -14,6 +14,7 @@ import NavBar from "./components/navbar.jsx";
 import Footer from "./components/footer.jsx";
 import ContactPage from "./pages/contact.jsx";
 import AdminPage from "./pages/admin.jsx";
+import Event from "./pages/event.jsx";
 
 
 
@@ -34,6 +35,10 @@ const router = createHashRouter([
       {
         path: "/",
         element: <App />,
+      },
+      {
+        path: "/event",
+        element: <Event />,
       },
       {
         path: "/gallery",
