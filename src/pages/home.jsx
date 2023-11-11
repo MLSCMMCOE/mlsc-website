@@ -11,6 +11,7 @@ import testimonials from "./testimonial_data";
 import "../styles/testimonials.css";
 import { Link } from "react-router-dom";
 import GallerySection from "../components/swiper";
+import Eventsection from "../components/eventsection";
 
 export default function HomePage() {
   return (
@@ -72,12 +73,17 @@ export default function HomePage() {
       </section>
       <TeamSection />
 
-      {/* <section id="events-section">
+      <section id="events-section" className="mt-5">
+      <h1 className="header-font-700">Events</h1>
         <div className="events-nav">
-          <button className="events-nav-btn active">Upcoming</button>
-          <button className="events-nav-btn">Past</button>
+          <Eventsection/>
+          {/* <button  id="cursor_default" className="gallery_btn">
+          <Link to={"/event"} className="btn bg-color-primary-blue color-white">
+            Explore more
+          </Link>
+        </button> */}
         </div>
-      </section> */}
+      </section>
 
       <section id="gallery-section">
         <h1 className="header-font-700">Gallery</h1>
